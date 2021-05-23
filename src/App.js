@@ -7,11 +7,11 @@ import TopBar from './components/TopBar/TopBar'
 import Footer from './components/Footer/Footer'
 import NewsletterCtaSection from './components/NewsletterCtaSection/NewsletterCtaSection'
 import LoadingScreen from './components/LoadingScreen'
-import BlogPage from './pages/Blog/BlogPage'
 // import { Elements } from "@stripe/react-stripe-js";
 // import { loadStripe } from "@stripe/stripe-js";
 // import DonatePage from './pages/Donate/DonatePage'
 import BlogPostPage from './pages/BlogPostPage/BlogPostPage'
+import Blog from './pages/Blog'
 // const stripePromise = loadStripe(
 //   "pk_test_51HiOnnDDHV7JDkB9tHxmUobKY4ZezsR5lsWsviFG5NPEPbpgFGBeGqyYHyMeSnMi5Ulv5pV29i6Vr8sbDyfNJDcA00U862gUpU"
 // );
@@ -41,7 +41,7 @@ function App() {
             <Route path="/activities" exact component={Activities} />
             <Route path="/privacy-policy" exact component={PrivacyPolicy} />
             <Route path="/blog" exact>
-              <BlogPage />
+              <Blog />
             </Route>
             <Route path="/act" exact component={Act} />
             <Route path="/blog/:slug" exact>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Row,
   Col,
@@ -9,7 +9,7 @@ import {
 } from 'reactstrap'
 import { useQuery, gql } from '@apollo/client'
 import Slider from 'react-slick'
-import './BlogPage.scss'
+import './styles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,
@@ -102,7 +102,8 @@ const GET_BLOG_DATA = gql`
 const updateQuery = (previousResult, { fetchMoreResult }) =>
   fetchMoreResult.posts.nodes.length ? fetchMoreResult : previousResult
 
-const BlogPage = () => {
+const Blog = () => {
+  const [searchPhrase, setsearchPhrase] = useState('')
   const variables = {
     first: 7,
     last: null,
@@ -125,7 +126,6 @@ const BlogPage = () => {
     dots: true,
     arrows: false,
   }
-
   return loading ? (
     <LoadingScreen />
   ) : (
@@ -208,26 +208,35 @@ const BlogPage = () => {
             <Input
               className="shadow-none"
               placeholder="Wpisz wyszukiwaną frazę"
+              value={searchPhrase}
+              onChange={e => setsearchPhrase(e.target.value)}
             />
-            <InputGroupAddon addonType="append">
-              <InputGroupText className="search-btn">
-                <FontAwesomeIcon icon={faSearch} />
-              </InputGroupText>
+            <InputGroupAddon
+              addonType="append"
+              onClick={() => console.log(searchPhrase)}
+            >
+              <NavHashLink to={`search/${searchPhrase}`}>
+                <InputGroupText className="search-btn">
+                  <FontAwesomeIcon icon={faSearch} />
+                </InputGroupText>
+              </NavHashLink>
             </InputGroupAddon>
           </InputGroup>
           <div>
             <h3>ZAGADNIENIA</h3>
             {data.categories.nodes.map(category => (
-              <button
-                className="blog-post__first--btn"
-                key={category.slug}
-                type="submit"
-              >
-                <div className="d-flex justify-content-between align-items-center">
-                  <h5>{category.name}</h5>
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </div>{' '}
-              </button>
+              <NavHashLink to={`category/${category.slug}`}>
+                <button
+                  className="blog-post__first--btn"
+                  key={category.slug}
+                  type="submit"
+                >
+                  <div className="d-flex justify-content-between align-items-center">
+                    <h5>{category.name}</h5>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                  </div>{' '}
+                </button>
+              </NavHashLink>
             ))}
           </div>
         </Col>
@@ -303,4 +312,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default Blog
