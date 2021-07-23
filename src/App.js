@@ -12,6 +12,9 @@ import LoadingScreen from './components/LoadingScreen'
 // import DonatePage from './pages/Donate/DonatePage'
 import BlogPostPage from './pages/BlogPostPage/BlogPostPage'
 import Blog from './pages/Blog'
+import SearchResults from './pages/SearchResults'
+import TagPostsList from './pages/CategoryPostsList'
+import CategoryPostsList from './pages/CategoryPostsList'
 // const stripePromise = loadStripe(
 //   "pk_test_51HiOnnDDHV7JDkB9tHxmUobKY4ZezsR5lsWsviFG5NPEPbpgFGBeGqyYHyMeSnMi5Ulv5pV29i6Vr8sbDyfNJDcA00U862gUpU"
 // );
@@ -50,6 +53,12 @@ function App() {
             {/* <Route path="/donate" exact>
               <DonatePage />
             </Route> */}
+            <Route path="/search/:phrase" exact>
+              <SearchResults />
+            </Route>
+            <Route path="/category/:category" exact>
+              <CategoryPostsList />
+            </Route>
             <Route path="/contact" exact component={Contact} />
             <Route component={NotFound} />
           </Switch>

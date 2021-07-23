@@ -206,7 +206,7 @@ const Blog = () => {
         <Col xs={4}>
           <InputGroup>
             <Input
-              className="shadow-none"
+              className="shadow-none search-box"
               placeholder="Wpisz wyszukiwaną frazę"
               value={searchPhrase}
               onChange={e => setsearchPhrase(e.target.value)}
@@ -251,12 +251,8 @@ const Blog = () => {
             <div>
               <img
                 src={`https://ea-poland-wordpress.azurewebsites.net${post.featuredImage.node.sourceUrl}`}
+                className="post-thumb"
                 alt={post.featuredImage.node.slug}
-                style={{
-                  height: '220px',
-                  width: '362px',
-                  borderRadius: '10px',
-                }}
               />
               <h3>{post.categories.nodes.map(cat => cat.name)}</h3>
               <h2>{post.title}</h2>
