@@ -16,7 +16,6 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { NavHashLink } from 'react-router-hash-link'
 import TagButton from '../../components/Common/TagButton/TagButton'
 import DateService from '../../services/DateService'
 import ScrollToTop from '../../components/ScrollToTop'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router'
 import { Row } from 'reactstrap'
 import { useQuery, gql } from '@apollo/client'

@@ -130,8 +130,8 @@ const Blog = () => {
     <LoadingScreen />
   ) : (
     <div>
-      <Row className="recommended-slider">
-        <Col className="recommended-slider-column text-center mx-auto">
+      <Row className="ea-row recommended-slider">
+        <Col className="ea-col recommended-slider-column text-center mx-auto">
           <Slider {...settings}>
             {data.recommendedPosts.nodes.map(post => (
               <div className="d-flex flex-column justify-content-center align-items-start">
@@ -145,6 +145,7 @@ const Blog = () => {
                         rgba(255, 255, 255, 0) 100%
                       ), url(https://ea-poland-wordpress.azurewebsites.net${post.featuredImage.node.sourceUrl})`,
                     backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     height: '580px',
                     width: '100%',
                     color: '#f5f5f5',
@@ -181,7 +182,7 @@ const Blog = () => {
           </Slider>
         </Col>
       </Row>
-      <Row className="blog-post__first">
+      <Row className="ea-row blog-post__first">
         <Col xs={8}>
           {data.posts.nodes[0] && (
             <NavHashLink
@@ -241,7 +242,7 @@ const Blog = () => {
           </div>
         </Col>
       </Row>
-      <Row className="blog-posts justify-content-between">
+      <Row className="ea-row blog-posts justify-content-between">
         {data.posts.nodes.slice(1).map(post => (
           <NavHashLink
             to={`blog/${post.slug}`}
