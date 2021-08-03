@@ -2,6 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import ReactGA from 'react-ga'
+import {
+  ApolloProvider,
+  ApolloClient,
+  createHttpLink,
+  InMemoryCache,
+} from '@apollo/client'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,11 +17,23 @@ import './index.scss'
 
 ReactGA.initialize('UA-79994527-1')
 
+const httpLink = createHttpLink({
+  // uri: process.env.REACT_APP_WP_URL,
+  uri: 'https://ea-poland-wordpress.azurewebsites.net/graphql',
+})
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+})
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

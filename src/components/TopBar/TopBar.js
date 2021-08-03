@@ -46,7 +46,9 @@ const TopBar = () => {
         //   "main-nav--scrolled"
         // }`}
         className={`p-0 main-nav ${
-          (location.pathname !== '/' || scrolled) && 'main-nav--scrolled'
+          ((location.pathname !== '/' && location.pathname !== '/blog') ||
+            scrolled) &&
+          'main-nav--scrolled'
         }`}
         fixed="top"
       >
@@ -56,7 +58,8 @@ const TopBar = () => {
           ) : (
             <WhiteLogo style={{ height: "60px" }}></WhiteLogo>
           )} */}
-          {location.pathname !== '/' || scrolled ? (
+          {(location.pathname !== '/' && location.pathname !== '/blog') ||
+          scrolled ? (
             <Logo className="main-nav__logo" />
           ) : (
             <WhiteLogo className="main-nav__logo" />
@@ -99,9 +102,14 @@ const TopBar = () => {
             >
               Wspieraj
             </NavHashLink>
-            {/* <NavHashLink to="/blog" className="main-nav__item" activeClassName="main-nav__item--active" onClick={() => setIsOpen(false)}>
+            <NavHashLink
+              to="/blog"
+              className="main-nav__item"
+              activeClassName="main-nav__item--active"
+              onClick={() => setIsOpen(false)}
+            >
               Blog
-            </NavHashLink> */}
+            </NavHashLink>
             <NavHashLink
               to="/contact"
               className="main-nav__item"

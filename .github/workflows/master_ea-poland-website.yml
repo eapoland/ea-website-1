@@ -27,6 +27,7 @@ jobs:
           npm run test --if-present
         env:
           REACT_APP_MAILCHIMP_ACTION: ${{ secrets.REACT_APP_MAILCHIMP_ACTION }}
+          REACT_APP_WP_URL: ${{ secrets.REACT_APP_WP_URL }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
