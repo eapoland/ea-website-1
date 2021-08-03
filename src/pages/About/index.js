@@ -22,12 +22,12 @@ const About = () => (
           najwięcej dobra?”
         </h3>
         <p>
-          Jesteśmy polską gałęzią międzynarodowego ruchu Effective Altruism,
-          który od 2013 r. zrzesza ludzi, których pragnieniem jest czynić
-          najwięcej dobra. To, co kluczowe dla naszej działalności to odwołanie
-          do naukowego światopoglądu i starannego rozumowania – wierzymy, że to
-          najlepszy sposób, by identyfikować zaniedbane obszary dobroczynności i
-          priorytetyzować działania w ich obrębie.
+          Jesteśmy polską gałęzią międzynarodowego ruchu Effective Altruism, od
+          2013 roku kształtowanego przez ludzi, których pragnieniem jest{' '}
+          <b>czynić najwięcej dobra</b>. Kluczowe dla naszej działalności jest
+          odwołanie do dowodów naukowych i starannego rozumowania – wierzymy, że
+          to najlepszy sposób, by identyfikować zaniedbane obszary
+          dobroczynności i priorytetyzować działania w ich obrębie.
         </p>
       </Col>
       <Col sm={6} />
@@ -37,11 +37,20 @@ const About = () => (
         <div className="about__fields--intro">
           <h3 className="text-center">Obszary działania</h3>
           <p>
-            Łączymy umysł i serce - naukowe podejście do świata i empatyczną
-            postawę. Naszym celem jest zwiększanie świadomości na temat
-            dobroczynności oraz angażowanie się w działania, które
-            najefektywniej poprawią sytuację istot odczuwających. Obecnie
-            główne, choć nie wyłączne obszary naszego zainteresowania, to:
+            Wybierając obszary, które traktujemy priorytetowo kierujemy się
+            kilkoma wskaźnikami:
+            <ul>
+              <li>
+                <b>skala</b> – czy dany problem jest rozległy?
+              </li>
+              <li>
+                <b>zaniedbania</b> – czy dany problem jest zaniedbany?
+              </li>
+              <li>
+                <b>wykonalności</b> – czy i jakim kosztem jesteśmy w stanie coś
+                z tym zrobić?
+              </li>
+            </ul>
           </p>
         </div>
         <FieldsTabs />

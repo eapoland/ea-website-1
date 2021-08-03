@@ -19,7 +19,8 @@ const NewsletterCtaSection = () => (
         ]}
         messages={{
           sending: 'Wysyłam...',
-          success: 'Dziękujemy za zasubskrybowanie!',
+          success:
+            'Dziękujemy za zasubskrybowanie! W skrzynce mailowej oczekuje na Ciebie mail z potwierdzeniem.',
           error: 'Wystąpił błąd.',
           empty: 'Podaj adres e-mail.',
           duplicate: 'Zbyt wiele prób dla podanego adresu e-mail!',

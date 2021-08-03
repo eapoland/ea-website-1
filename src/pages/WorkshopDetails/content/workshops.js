@@ -38,7 +38,7 @@ const workshops = [
       'Jak działać efektywnie w obszarze rzecznictwa w społecznie istotnych kwestiach?',
     audience: 'pracowników organizacji pozarządowych',
     summary:
-      'Świat jest złożony, a nasz rozum ograniczony. Jako gatunek jesteśmy kiepscy w przewidywaniu przyszłości. A jednak wiemy o takich działaniach, które przynoszą rezultaty znacząco lepsze, niż ich alternatywy. Czy odpowiada za to wyłącznie los? A może jesteśmy w stanie zarządzić działaniem tak, aby przynieść światu zdecydowanie więcej dobra, niż miałoby to miejsce gdybyśmy zadziałali inaczej? W trakcie tych warsztatów poszukamy odpowiedzi na pytanie o to jak działać efektywnie, odnosząc się w szczególności do działań w obszarze rzecznictwa w społecznie istotnych kwestiach.',
+      'Świat jest złożony, a nasz rozum – ograniczony. Jako gatunek jesteśmy kiepscy w przewidywaniu przyszłych wydarzeń. A jednak niektóre działania przynoszą znacząco lepszy rezultat, niż inne, o zbliżonym celu. Czy odpowiada za to wyłącznie los? A może jesteśmy w stanie zarządzić działaniem tak, aby przynieść światu zdecydowanie więcej dobra, niż miałoby to miejsce, gdybyśmy zadziałali inaczej? W trakcie tych warsztatów poszukamy odpowiedzi na pytanie o to, jak działać efektywnie, odnosząc się w szczególności do działań w obszarze rzecznictwa.',
     limit: 'brak limitu uczestników',
     duration: '3 godziny',
     price: 'pierwszy wykład bez opłaty',
@@ -58,7 +58,7 @@ const workshops = [
     audience:
       'konferencji dotyczących pandemii i zmian klimatycznych, środowiska filozofów i etyków, młodzieży szkolnej',
     summary:
-      'Czy pandemii można było zapobiec? A jeśli tak, to w jaki sposób zapobiec kolejnej? Co z innymi zagrożeniami? Jak w nadchodzącej dekadzie zapobiec globalnym katastrofom? Od cyberwojny przez nieudane eksperymenty biotechnologiczne i ekstremalne zjawiska pogodowe związane z ociepleniem klimatu – przeprowadzimy Was przez najczarniejsze scenariusze nieodległych przyszłości. Poszukamy też nadziei w sposobach na które ludzkość może wyjść z tych z kryzysów obronną ręką.',
+      'Czy pandemiom można zapobiec? A jeśli tak, to w jaki sposób zapobiec kolejnej? Jakie inne ryzyka pomijamy - i czy je także możemy kontrolować? Od cyberwojny po nieudane eksperymenty biotechnologiczne i ekstremalne zjawiska pogodowe związane z ociepleniem klimatu, przeprowadzimy was przez najczarniejsze scenariusze nieodległych przyszłości, a także sposoby, dzięki którym ludzkość może wyjść obronną ręką z obecnych i przyszłych kryzysów.',
     limit: 'brak limitu uczestników',
     duration: '3 godziny',
     price: 'pierwszy wykład bez opłaty',
@@ -102,7 +102,7 @@ const workshops = [
     shortSummary:
       'Czy uważasz, że świat mógłby być lepszy? Czy chcesz mieć wpływ na jego pozytywną zmianę? Jak czynić dobro lepiej?',
     summary:
-      'Czy uważasz, że świat mógłby być lepszy? Czy chcesz mieć wpływ na jego pozytywną zmianę? Jak czynić dobro lepiej? Mamy nadzieję, że podczas tego spotkania przekonamy Cię, że każdy – także Ty – może zostać Efektywnym Altruistą. Efektywny Altruizm to pytanie o to, jak przynieść światu najwięcej dobra. To międzynarodowa społeczność szukająca odpowiedzi na to pytanie, by wykorzystać tę wiedzę w praktyce. Podczas spotkania opowiemy Wam historię Efektywnego Altruizmu ruchu i efektywnego altruizmu idei z której ten ruch wyrasta. Wychodząc od pytań filozoficznych, omówimy szereg praktycznych zagadnień związanych z dobroczynnością.',
+      '"Efektywny Altruizm to międzynarodowa społeczność, która szuka odpowiedzi na jedno ważne pytanie: "jak przynieść światu najwięcej dobra?" Zdobytą wiedzę wykorzystujemy w praktyce, skupiając działania w obszarach, które wymagają największej uwagi . Okazuje się, że przy użyciu ograniczonych środków możemy dokonać realnych zmian w świecie. Podczas tego spotkania opowiemy Wam historię Efektywnego Altruizmu – ruchu oraz idei, z której ruch ten wyrasta. Wychodząc od pytań filozoficznych omówimy szereg praktycznych zagadnień związanych z dobroczynnością. Wyjdziecie stąd z najlepszą dostępną nam wiedzą o tym, jak czynić dobro efektywnie – i co to właściwie oznacza. Samodzielnie odpowiecie też na pytanie, jaki Wy sami możecie mieć wkład w największą możliwą poprawę świata.',
     recommended: true,
     audience:
       'pracowników korporacji, studentów, pracowników i wolontariuszy organizacji pozarządowych, administracji publicznej, fundacji korporacyjnych, fundacje i instytucje grantodawczych',

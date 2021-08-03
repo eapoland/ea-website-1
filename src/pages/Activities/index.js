@@ -124,7 +124,7 @@ const Activities = () => {
             >
               <h5>Marcin Tischner</h5>
               <p>
-                Porozmawiajmy o sposobach, dzięki którym Twoja organizacja może
+                Porozmawiajmy o metodach, które pozwolą Twojej organizacji
                 osiągnąć największy dobroczynny zwrot lub wzmocnić swoją
                 odpowiedzialność społeczną.
               </p>

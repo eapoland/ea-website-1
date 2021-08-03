@@ -9,10 +9,10 @@ const QuoteSection = () => (
       <Slide left cascade>
         <div>
           <h3>
-            "Ruch zwany Efektywnym Altruizmem zdobywa coraz większą popularność.
-            To ważne, bo łączy ze sobą serce i rozum."
+            "Efektywny Altruizm to połączenie jasnego spojrzenia na czynienie
+            dobra z naukową dokładnością."
           </h3>
-          <p className="quote-section__author">- Peter Singer</p>
+          <p className="quote-section__author">- Derek Thompson</p>
         </div>
       </Slide>
     </Col>
