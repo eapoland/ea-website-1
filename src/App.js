@@ -10,7 +10,7 @@ import LoadingScreen from './components/LoadingScreen'
 // import { Elements } from "@stripe/react-stripe-js";
 // import { loadStripe } from "@stripe/stripe-js";
 // import DonatePage from './pages/Donate/DonatePage'
-import BlogPostPage from './pages/BlogPostPage/BlogPostPage'
+import BlogPostPage from './pages/BlogPostPage'
 import Blog from './pages/Blog'
 import SearchResults from './pages/SearchResults'
 import CategoryPostsList from './pages/CategoryPostsList'

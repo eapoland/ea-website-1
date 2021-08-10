@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import './BlogPostPage.scss'
+import './styles.scss'
 import { useQuery, gql } from '@apollo/client'
 import Row from 'reactstrap/lib/Row'
 import Col from 'reactstrap/lib/Col'
@@ -84,7 +84,7 @@ const BlogPostPage = () => {
           style={{
             backgroundImage: `linear-gradient(180deg, #00000080 0%, #80808000 100%), url(https://ea-poland-wordpress.azurewebsites.net${data.post.featuredImage.node.sourceUrl})`,
             backgroundSize: 'cover',
-            height: '580px',
+            backgroundPosition: 'center',
             width: '100%',
             color: '#f5f5f5',
           }}
