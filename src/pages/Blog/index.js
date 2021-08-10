@@ -134,7 +134,10 @@ const Blog = () => {
         <Col className="ea-col recommended-slider-column text-center mx-auto">
           <Slider {...settings}>
             {data.recommendedPosts.nodes.map(post => (
-              <div className="d-flex flex-column justify-content-center align-items-start">
+              <div
+                className="d-flex flex-column justify-content-center align-items-start"
+                key={post.slug}
+              >
                 <div
                   className="d-flex flex-column justify-content-center align-items-start recommended-slider__item"
                   style={{
@@ -146,7 +149,6 @@ const Blog = () => {
                       ), url(https://ea-poland-wordpress.azurewebsites.net${post.featuredImage.node.sourceUrl})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    height: '580px',
                     width: '100%',
                     color: '#f5f5f5',
                   }}
@@ -170,6 +172,7 @@ const Blog = () => {
                     dangerouslySetInnerHTML={{
                       __html: post.excerpt,
                     }}
+                    className="recommended-post__excerpt"
                   />
                   <EAButton
                     title="Czytaj dalej"
@@ -226,7 +229,7 @@ const Blog = () => {
           <div>
             <h3>ZAGADNIENIA</h3>
             {data.categories.nodes.map(category => (
-              <NavHashLink to={`category/${category.slug}`}>
+              <NavHashLink to={`category/${category.slug}`} key={category.slug}>
                 <button
                   className="blog-post__first--btn"
                   key={category.slug}
@@ -249,14 +252,16 @@ const Blog = () => {
             style={{ textDecoration: 'none' }}
             key={post.id}
           >
-            <div>
+            <div className="blog-posts__card">
               <img
                 src={`https://ea-poland-wordpress.azurewebsites.net${post.featuredImage.node.sourceUrl}`}
                 className="post-thumb"
                 alt={post.featuredImage.node.slug}
               />
-              <h3>{post.categories.nodes.map(cat => cat.name)}</h3>
-              <h2>{post.title}</h2>
+              <div>
+                <h3>{post.categories.nodes.map(cat => cat.name)}</h3>
+                <h2>{post.title}</h2>
+              </div>
             </div>
           </NavHashLink>
         ))}
