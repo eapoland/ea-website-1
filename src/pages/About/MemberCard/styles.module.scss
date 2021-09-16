@@ -8,30 +8,33 @@
     transition: ease 1s;
   }
   &-1 {
-    background: url('../../../assets/images/team/kmizio.png') center no-repeat;
+    background: url('../../../../public/images/team/kmizio.png') center
+      no-repeat;
     background-size: cover;
   }
   &-2 {
-    background: url('../../../assets/images/team/mjaryczewska.png') center
+    background: url('../../../../public/images/team/mjaryczewska.png') center
       no-repeat;
     background-size: cover;
   }
   &-3 {
-    background: url('../../../assets/images/team/mtruong.png') center no-repeat;
+    background: url('../../../../public/images/team/mtruong.png') center
+      no-repeat;
     background-size: cover;
   }
   &-4 {
-    background: url('../../../assets/images/team/mtrzesimiech.png') center
+    background: url('../../../../public/images/team/mtrzesimiech.png') center
       no-repeat;
     background-size: cover;
   }
   &-5 {
-    background: url('../../../assets/images/team/mtischner.png') center
+    background: url('../../../../public/images/team/mtischner.png') center
       no-repeat;
     background-size: cover;
   }
   &-6 {
-    background: url('../../../assets/images/team/mhawelka.png') center no-repeat;
+    background: url('../../../../public/images/team/mhawelka.png') center
+      no-repeat;
     background-size: cover;
   }
 }

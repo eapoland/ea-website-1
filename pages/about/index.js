@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'reactstrap'
 import ScrollToTop from '../../components/ScrollToTop'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
-import './styles.scss'
+// './styles.scss'
 import teamMembers from '../../src/pages/About/content/teamMembers'
 import consultants from '../../src/pages/About/content/consultants'
 import MemberCard from '../../src/pages/About/MemberCard'
@@ -96,7 +96,7 @@ const About = () => (
         </div>
       </Col>
     </Row>
-    <Row className="about__consultants">
+    {/* <Row className="about__consultants">
       <Col>
         <h3 className="text-center">Doradzają nam</h3>
         <div className="d-flex flex-wrap justify-content-center about__team--consultants">
@@ -111,7 +111,7 @@ const About = () => (
         <h3 className="text-center">Pracowali z nami</h3>
         <WorkedWithUsSlider />
       </Col>
-    </Row>
+    </Row> */}
   </div>
 )
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
-import './styles.scss'
+import './styles.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'

@@ -4,7 +4,7 @@ import Row from 'reactstrap/lib/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import './styles.scss'
+import './styles.module.scss'
 
 const MemberCard = ({ teamMember }) => (
   <div className={`about__team--person about__team--person-${teamMember.id}`}>

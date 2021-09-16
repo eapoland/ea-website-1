@@ -1,5 +1,5 @@
 import React from 'react'
-import './SectionTitle.scss'
+import './SectionTitle.module.scss'
 
 const SectionTitle = ({ text, title }) => (
   <div className="section-title d-flex flex-column justify-content-center">

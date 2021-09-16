@@ -1,7 +1,7 @@
 // import ksarek from "../../assets/images/team/consulting/ksarek.png";
-import dgogloza from '../../../assets/images/team/consulting/dgogloza.png'
+import dgogloza from '../../../../public/images/team/consulting/dgogloza.png'
 // import dwyrzykowski from "../../assets/images/team/consulting/dwyrzykowski.png";
-import mwozniak from '../../../assets/images/team/consulting/mwozniak.png'
+import mwozniak from '../../../../public/images/team/consulting/mwozniak.png'
 
 const consultants = [
   // {

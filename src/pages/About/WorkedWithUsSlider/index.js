@@ -5,7 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
-import './styles.scss'
+import './styles.module.scss'
 
 const WorkedWithUsSlider = () => {
   const sliderSettings = {

@@ -1,9 +1,9 @@
-import kmizio from '../../../assets/images/team/kmizio.png'
-import mtruong from '../../../assets/images/team/mtruong.png'
-import mtischner from '../../../assets/images/team/mtischner.png'
-import mtrzesimiech from '../../../assets/images/team/mtrzesimiech.png'
-import mjaryczewska from '../../../assets/images/team/mjaryczewska.png'
-import mhawelka from '../../../assets/images/team/mhawelka.png'
+import kmizio from '../../../../public/images/team/kmizio.png'
+import mtruong from '../../../../public/images/team/mtruong.png'
+import mtischner from '../../../../public/images/team/mtischner.png'
+import mtrzesimiech from '../../../../public/images/team/mtrzesimiech.png'
+import mjaryczewska from '../../../../public/images/team/mjaryczewska.png'
+import mhawelka from '../../../../public/images/team/mhawelka.png'
 
 const teamMembers = [
   {

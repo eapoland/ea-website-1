@@ -1,6 +1,6 @@
 import React from 'react'
 import Spinner from 'reactstrap/lib/Spinner'
-import './styles.scss'
+import './styles.module.scss'
 
 const LoadingScreen = () => (
   <div className="ea-loading">

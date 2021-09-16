@@ -34,7 +34,6 @@ function App() {
       <Suspense fallback={<LoadingScreen />}>
         {/* <Elements stripe={stripePromise}> */}
         <Container className="p-0 ea-container">
-          <TopBar />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
