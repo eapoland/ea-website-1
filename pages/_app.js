@@ -1,5 +1,5 @@
 import '../styles/styles.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/globals.scss'
 
 function EAWebsite({ Component, pageProps }) {
   return <Component {...pageProps} />

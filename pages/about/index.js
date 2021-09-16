@@ -3,12 +3,12 @@ import { Row, Col } from 'reactstrap'
 import ScrollToTop from '../../components/ScrollToTop'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import './styles.scss'
-import teamMembers from './content/teamMembers'
-import consultants from './content/consultants'
-import MemberCard from './MemberCard'
-import ConsultantCard from './ConsultantCard'
-import WorkedWithUsSlider from './WorkedWithUsSlider'
-import FieldsTabs from './FieldsTabs'
+import teamMembers from '../../src/pages/About/content/teamMembers'
+import consultants from '../../src/pages/About/content/consultants'
+import MemberCard from '../../src/pages/About/MemberCard'
+import ConsultantCard from '../../src/pages/About/ConsultantCard'
+import WorkedWithUsSlider from '../../src/pages/About/WorkedWithUsSlider'
+import FieldsTabs from '../../src/pages/About/FieldsTabs'
 
 const About = () => (
   <div className="about">
