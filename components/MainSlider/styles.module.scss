@@ -1,4 +1,4 @@
-@import '../../../styles/variables';
+@import '../../styles/variables';
 
 .carousel-item img {
   width: 100%;
@@ -31,7 +31,7 @@
           rgba(9, 9, 121, 0) 90%,
           rgba(255, 255, 255, 0) 100%
         ),
-        url('../../../assets/images/baner_alt.jpg') center no-repeat;
+        url('../../public/images/baner_alt.jpg') center no-repeat;
       background-size: cover;
     }
   }

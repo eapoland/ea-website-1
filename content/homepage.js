@@ -1,5 +1,5 @@
-import photo from '../../../assets/images/main1.jpg'
-import photo2 from '../../../assets/images/main2.jpg'
+import photo from '../public/images/main1.jpg'
+import photo2 from '../public/images/main2.jpg'
 
 const content = [
   {

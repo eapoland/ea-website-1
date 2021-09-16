@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.scss'
+import './styles.module.scss'
 import { Col, Row } from 'reactstrap'
 import Slide from 'react-reveal/Slide'
 

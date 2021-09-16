@@ -17,6 +17,7 @@
     "bootstrap": "^4.5.2",
     "graphql": "^15.5.0",
     "http-proxy-middleware": "^1.0.5",
+    "next": "^11.1.2",
     "node-sass": "^4.14.1",
     "rc-tabs": "^11.7.3",
     "react": "^16.13.1",
@@ -28,9 +29,7 @@
     "react-mailchimp-form": "^1.0.2",
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.1.0",
-    "react-scripts": "3.4.3",
     "react-share": "^4.3.1",
     "react-slick": "^0.27.11",
     "react-transition-group": "^4.4.1",
@@ -38,10 +37,9 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --passWithNoTests",
-    "eject": "react-scripts eject",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

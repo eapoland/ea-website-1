@@ -1,12 +1,13 @@
 import React from 'react'
-import './styles.scss'
+import './styles.module.scss'
 import { Col, Row } from 'reactstrap'
 import { Fade } from 'react-reveal'
-import okLogo from '../../../assets/images/ok-logo.png'
-import paretoLogo from '../../../assets/images/pareto-logo.png'
-import altruistoLogo from '../../../assets/images/altruisto-logo.png'
-import provegLogo from '../../../assets/images/proveg-logo.png'
-import schweitzerLogo from '../../../assets/images/schweitzer-logo.png'
+import Image from 'next/image'
+import okLogo from '../../public/images/ok-logo.png'
+import paretoLogo from '../../public/images/pareto-logo.png'
+import altruistoLogo from '../../public/images/altruisto-logo.png'
+import provegLogo from '../../public/images/proveg-logo.png'
+import schweitzerLogo from '../../public/images/schweitzer-logo.png'
 
 const FriendlyOrganisationsSection = () => (
   <Fade bottom>
@@ -20,7 +21,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={okLogo} alt="OK logo" />
+              <Image src={okLogo} alt="OK logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -29,7 +30,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={schweitzerLogo} alt="Albert Schweitzer logo" />
+              <Image src={schweitzerLogo} alt="Albert Schweitzer logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -38,7 +39,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={provegLogo} alt="ProVeg logo" />
+              <Image src={provegLogo} alt="ProVeg logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -47,7 +48,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={altruistoLogo} alt="Altruisto logo" />
+              <Image src={altruistoLogo} alt="Altruisto logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -56,7 +57,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={paretoLogo} alt="Pareto logo" />
+              <Image src={paretoLogo} alt="Pareto logo" />
             </a>
           </div>
         </div>

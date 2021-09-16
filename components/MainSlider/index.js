@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
 import { Row, Col } from 'reactstrap'
-import EAButton from '../../../components/Common/EAButton/EAButton'
-import './styles.scss'
+import EAButton from '../Common/EAButton/EAButton'
+import './styles.module.scss'
 
 const MainSlider = () => {
   const settings = {

@@ -1,11 +1,11 @@
-@import '../../../styles/variables';
+@import '../../styles/variables';
 
 .quote-section {
   justify-content: center;
   &__column.col {
     max-width: 1366px;
     padding: 4.687rem 11.437rem;
-    background: url('../../../assets/images/quote.png') bottom left no-repeat;
+    background: url('../../public/images/quote.png') bottom left no-repeat;
   }
   background: $color-secondary no-repeat;
   opacity: 1;

@@ -1,8 +1,9 @@
 import React from 'react'
-import './styles.scss'
+import './styles.module.scss'
 import { Col, Row } from 'reactstrap'
+import Image from 'next/image'
 import Fade from 'react-reveal/Fade'
-import EAButton from '../../../components/Common/EAButton/EAButton'
+import EAButton from '../Common/EAButton/EAButton'
 
 const ContentPreviewSection = ({ reversed, content }) => (
   <Fade bottom cascade>
@@ -24,7 +25,7 @@ const ContentPreviewSection = ({ reversed, content }) => (
         />
       </Col>
       <Col xs={6} className="content-preview-section__column">
-        <img src={content.img} alt={content.imgAlt} />
+        <Image src={content.img} alt={content.imgAlt} />
       </Col>
     </Row>
   </Fade>

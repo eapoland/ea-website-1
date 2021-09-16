@@ -19,6 +19,7 @@
 .env.production.local
 .editorconfig
 .env
+.next
 
 npm-debug.log*
 yarn-debug.log*
