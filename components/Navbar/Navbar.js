@@ -77,7 +77,7 @@ const Navbar = () => {
       <div
         className={`w-full block lg:flex lg:w-auto justify-center ${
           isExpanded ? ' flex' : ' hidden'
-        } bg-secondary ${isTransparent ? 'lg:bg-transparent' : 'lg:bg-white'}
+        } bg-primary ${isTransparent ? 'lg:bg-transparent' : 'lg:bg-white'}
         order-last lg:order-none transition duration-500 ease-in py-4
           `}
       >

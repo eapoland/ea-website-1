@@ -1,5 +1,5 @@
 import React from 'react'
-import QuoteSection from '../components/QuoteSection'
+import Slide from 'react-reveal/Slide'
 import ContentPreviewSection from '../components/ContentPreviewSection'
 import FriendlyOrganisationsSection from '../components/FriendlyOrganisationsSection'
 import EAButton from '../components/Common/EAButton/EAButton'
@@ -27,7 +27,22 @@ const Home = () => (
       </p>
       <EAButton title="Dowiedz się więcej" size={15} target="about" />
     </header>
-    <QuoteSection />
+    <section
+      className="flex justify-center bg-secondary max-w-screen-xl
+      p-18 md:px-46 md:py-18 bg-quote bg-left-bottom bg-no-repeat"
+    >
+      <Slide left cascade>
+        <div>
+          <h3 className="text-left">
+            "Efektywny Altruizm to połączenie jasnego spojrzenia na czynienie
+            dobra z naukową dokładnością."
+          </h3>
+          <p className="text-h3 font-serif italic font-light">
+            - Derek Thompson
+          </p>
+        </div>
+      </Slide>
+    </section>
     <ContentPreviewSection content={content[0]} />
     <ContentPreviewSection reversed content={content[1]} />
     <FriendlyOrganisationsSection />

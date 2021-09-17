@@ -14,7 +14,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        secondary: '#0b879d',
+        primary: '#0b879d',
+        secondary: '#fafafa',
         accent: '#edcf00',
       },
       fontSize: {
@@ -28,6 +29,13 @@ module.exports = {
       },
       height: {
         145: '36.25rem',
+      },
+      padding: {
+        18: '4.5rem',
+        46: '11.5rem',
+      },
+      backgroundImage: {
+        quote: "url('/images/quote.png')",
       },
     },
   },

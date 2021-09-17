@@ -7,7 +7,7 @@ const EAButton = ({ title, target, customClass, onClick, size }) => (
   <Link href={target ? target : '#'}>
     <a>
       <Button
-        className={`ea-button ${customClass} text-center text-white bg-secondary px-6 py-3.5 border-0 rounded-none uppercase text-base font-sans font-bold`}
+        className={`ea-button ${customClass} text-center text-white bg-primary px-6 py-3.5 border-0 rounded-none uppercase text-base font-sans font-bold`}
         onClick={onClick}
         style={
           size
