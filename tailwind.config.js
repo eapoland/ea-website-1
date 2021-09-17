@@ -26,6 +26,9 @@ module.exports = {
         h6: ['0.75em', '1.5rem'],
         p: ['1em', '1.5rem'],
       },
+      height: {
+        145: '36.25rem',
+      },
     },
   },
   variants: {

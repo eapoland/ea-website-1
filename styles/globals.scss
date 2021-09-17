@@ -28,39 +28,43 @@
     }
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black;
+    @apply mb-3;
+  }
+
   h1 {
     @apply text-center;
-    @apply text-black;
     @apply font-serif;
     @apply text-h1;
   }
   h2 {
     @apply text-left;
-    @apply text-black;
     @apply font-serif;
     @apply text-h2;
   }
   h3 {
     @apply text-center;
-    @apply text-black;
     @apply font-serif;
     @apply text-h3;
   }
   h4 {
     @apply text-left;
-    @apply text-black;
     @apply font-serif;
     @apply text-h4;
   }
   h5 {
     @apply text-left;
-    @apply text-black;
     @apply font-sans;
     @apply text-h5;
   }
   h6 {
     @apply text-left;
-    @apply text-black;
     @apply font-sans;
     @apply text-h6;
   }
@@ -69,5 +73,6 @@
     @apply text-black;
     @apply font-sans;
     @apply text-p;
+    @apply mb-6;
   }
 }
