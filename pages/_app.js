@@ -1,12 +1,12 @@
 import CookieConsent from 'react-cookie-consent'
-import TopBar from '../components/Navbar/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 import '../styles/styles.scss'
 import '../styles/globals.scss'
 
 function EAWebsite({ Component, pageProps }) {
   return (
     <div className="container m-auto">
-      <TopBar />
+      <Navbar />
       <Component {...pageProps} />
       <CookieConsent
         location="bottom"

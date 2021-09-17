@@ -9,7 +9,7 @@ const NavbarSocialLink = ({ destination, icon }) => {
       href={destination}
       target="_blank"
       rel="noopener noreferrer"
-      className={`font-bold uppercase text-base leading-5 text-left px-2 py-4 transition duration-300 ease-in-out hover:underline ${
+      className={`font-bold uppercase text-xl lg:text-base mx-2 lg:mx-0 leading-5 text-left px-2 py-4 transition duration-300 ease-in-out hover:underline ${
         router.pathname === destination ? 'underline' : 'no-underline'
       }`}
       style={{

@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         secondary: '#0b879d',
+        accent: '#edcf00',
       },
       fontSize: {
         h1: ['3.375em', '4.5rem'],

@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 8px;
+  }
+
+  @screen sm {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  @screen md {
+    html {
+      font-size: 12px;
+    }
+    .app__footer {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @screen lg {
+    html {
+      font-size: 14px;
+    }
+  }
+
   h1 {
     @apply text-center;
     @apply text-black;
