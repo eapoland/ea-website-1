@@ -40,19 +40,11 @@ const Navbar = () => {
   })
   return (
     <nav
-      className={`z-50 fixed w-full xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm
+      className={`z-50 fixed w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl
       h-28 lg:h-20 mx-auto flex items-center justify-between flex-wrap bg-teal-500 p-0 transition duration-500 ${
         isTransparent ? 'bg-transparent' : 'bg-white'
       } transition duration-500`}
     >
-      {/* <NavbarBrand tag={Link} href="/" className="main-nav__brand">
-          {(location.pathname !== '/' && location.pathname !== '/blog') ||
-          scrolled ? (
-            <Logo className="main-nav__logo" />
-          ) : (
-            <WhiteLogo className="main-nav__logo" />
-          )}
-        </NavbarBrand> */}
       <div className="block lg:hidden">
         <button
           className={`flex items-center justify-center h-28 w-28 px-3 py-2 rounded-none ${

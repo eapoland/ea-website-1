@@ -87,7 +87,6 @@ class EADocument extends Document {
           />
           <meta name="theme-color" content="#ffffff" />
           <link rel="icon" href="../public/favicon.ico" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content="Pomagaj efektywnie" />
           <link rel="apple-touch-icon" href="../public/logo192.png" />
