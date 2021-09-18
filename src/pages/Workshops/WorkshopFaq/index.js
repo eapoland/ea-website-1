@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqItem from '../FaqItem'
-import './styles.scss'
+//import './styles.scss'
 import faq from '../content/faq'
 
 const WorkshopFaq = () => (

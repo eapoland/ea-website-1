@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
 import ScrollToTop from '../../components/ScrollToTop'
-import SectionTitle from '../../components/SectionTitle/SectionTitle'
+import SectionTitle from '../../components/SectionTitle'
 // './styles.scss'
 import teamMembers from '../../src/pages/About/content/teamMembers'
 import consultants from '../../src/pages/About/content/consultants'

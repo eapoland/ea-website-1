@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav
       className={`z-50 fixed w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl
-      h-28 lg:h-20 mx-auto flex items-center justify-between flex-wrap bg-teal-500 p-0 transition duration-500 ${
+      h-28 lg:h-20 mx-auto flex items-center justify-between flex-wrap bg-teal-500 p-0 transition duration-500 ease-in ${
         isTransparent ? 'bg-transparent' : 'bg-white'
       } transition duration-500`}
     >
@@ -76,8 +76,7 @@ const Navbar = () => {
       <div
         className={`w-full block lg:flex lg:w-auto justify-center ${
           isExpanded ? ' flex' : ' hidden'
-        } bg-primary ${isTransparent ? 'lg:bg-transparent' : 'lg:bg-white'}
-        order-last lg:order-none transition duration-500 ease-in py-4
+        } bg-primary lg:bg-transparent order-last lg:order-none py-4
           `}
       >
         <div

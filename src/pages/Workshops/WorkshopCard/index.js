@@ -1,7 +1,7 @@
 import React from 'react'
-import EAButton from '../../../components/Common/EAButton/EAButton'
+import EAButton from '../../../../components/Common/EAButton/EAButton'
 import GAService from '../../../services/GAService'
-import './styles.scss'
+//import './styles.scss'
 
 const WorkshopCard = ({ workshopData }) => (
   <div className="workshop-card d-flex flex-column">

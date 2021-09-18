@@ -1,9 +1,9 @@
 import React from 'react'
-import './styles.scss'
+//import './styles.scss'
 import { Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import EAButton from '../../../components/Common/EAButton/EAButton'
+import EAButton from '../../../../components/Common/EAButton/EAButton'
 import workshops from '../../WorkshopDetails/content/workshops'
 import GAService from '../../../services/GAService'
 

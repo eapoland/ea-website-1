@@ -4,13 +4,7 @@
 
 @layer base {
   html {
-    font-size: 10px;
-  }
-
-  @screen sm {
-    html {
-      font-size: 12px;
-    }
+    font-size: 12px;
   }
 
   @screen md {
@@ -62,6 +56,8 @@
     @apply text-left;
     @apply font-sans;
     @apply text-h5;
+    @apply uppercase;
+    @apply font-bold;
   }
   h6 {
     @apply text-left;
@@ -74,5 +70,9 @@
     @apply font-sans;
     @apply text-p;
     @apply mb-6;
+  }
+
+  ul {
+    @apply list-disc;
   }
 }

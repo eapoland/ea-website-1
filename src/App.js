@@ -2,8 +2,6 @@ import React, { Suspense, lazy } from 'react'
 import './App.scss'
 import { Container } from 'reactstrap'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import CookieConsent from 'react-cookie-consent'
-import TopBar from './components/TopBar/TopBar'
 import Footer from './components/Footer/Footer'
 import NewsletterCtaSection from './components/NewsletterCtaSection/NewsletterCtaSection'
 import LoadingScreen from './components/LoadingScreen'
@@ -23,7 +21,6 @@ const About = lazy(() => import('./pages/About'))
 const Workshops = lazy(() => import('./pages/Workshops'))
 const WorkshopDetails = lazy(() => import('./pages/WorkshopDetails'))
 const Activities = lazy(() => import('./pages/Activities'))
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy/PrivacyPolicy'))
 const Act = lazy(() => import('./pages/Act'))
 const Contact = lazy(() => import('./pages/Contact'))
 const NotFound = lazy(() => import('./pages/NotFound'))
@@ -40,7 +37,6 @@ function App() {
             <Route path="/workshops" exact component={Workshops} />
             <Route path="/workshops/:id" exact component={WorkshopDetails} />
             <Route path="/activities" exact component={Activities} />
-            <Route path="/privacy-policy" exact component={PrivacyPolicy} />
             <Route path="/blog" exact>
               <Blog />
             </Route>
@@ -60,31 +56,6 @@ function App() {
             <Route path="/contact" exact component={Contact} />
             <Route component={NotFound} />
           </Switch>
-          <CookieConsent
-            location="bottom"
-            buttonText="Akceptuję"
-            cookieName="eaCookie"
-            style={{ background: '#2B373B' }}
-            buttonStyle={{
-              backgroundColor: '#0b879d',
-              fontSize: '13px',
-              color: '#fff',
-            }}
-            expires={150}
-          >
-            Ta strona korzysta z ciasteczek.
-            <br />
-            <span style={{ fontSize: '10px' }}>
-              Wykorzystujemy pliki cookie do spersonalizowania treści i reklam,
-              aby oferować funkcje społecznościowe i analizować ruch na naszej
-              witrynie. Informacje o tym, jak korzystasz z naszej witryny,
-              udostępniamy partnerom społecznościowym, reklamowym i
-              analitycznym. Partnerzy mogą połączyć te informacje z innymi
-              danymi otrzymanymi od Ciebie lub uzyskanymi podczas korzystania z
-              ich usług. Kontynuując korzystanie z naszej witryny, zgadzasz się
-              na używanie plików cookie.
-            </span>
-          </CookieConsent>
           <div className="d-flex app__footer">
             <Footer />
             <NewsletterCtaSection />

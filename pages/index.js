@@ -1,4 +1,3 @@
-import React from 'react'
 import Slide from 'react-reveal/Slide'
 import ContentPreviewSection from '../components/ContentPreviewSection'
 import FriendlyOrganisationsSection from '../components/FriendlyOrganisationsSection'

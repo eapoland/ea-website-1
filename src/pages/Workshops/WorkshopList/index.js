@@ -1,7 +1,7 @@
 import React from 'react'
 import Row from 'reactstrap/lib/Row'
 import WorkshopCard from '../WorkshopCard'
-import './styles.scss'
+//import './styles.scss'
 import workshops from '../../WorkshopDetails/content/workshops'
 
 const WorkshopList = () => (

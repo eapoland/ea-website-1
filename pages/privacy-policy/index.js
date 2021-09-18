@@ -1,15 +1,13 @@
 import React from 'react'
-import { Container } from 'reactstrap'
-import SectionTitle from '../../components/SectionTitle/SectionTitle'
+import SectionTitle from '../../components/SectionTitle'
 import ScrollToTop from '../../components/ScrollToTop'
-import './PrivacyPolicy.scss'
 
 const PrivacyPolicy = () => (
   <>
     <ScrollToTop />
     <SectionTitle title="Polityka prywatności" />
 
-    <Container>
+    <section className="mb-32">
       <h2>Wprowadzenie</h2>
 
       <p>
@@ -77,7 +75,6 @@ const PrivacyPolicy = () => (
         <li>Miasto,</li>
         <li>Obecne zajęcie</li>
       </ul>
-      <p />
 
       <p>
         W celu zarejestrowania jako członkostwa przetwarzamy takie dane osobowe,
@@ -448,7 +445,7 @@ const PrivacyPolicy = () => (
           <time dateTime="2018-07-11">11.07.2018 r</time>.
         </li>
       </ol>
-    </Container>
+    </section>
   </>
 )
 

@@ -1,16 +1,18 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useRouter } from 'next/router'
 import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
 import ScrollToTop from '../../components/ScrollToTop'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import workshops from './content/workshops'
-import './WorkshopDetails.scss'
+//import './WorkshopDetails.scss'
 import WorkshopForm from './WorkshopForm'
 
 const WorkshopDetails = () => {
-  const { id } = useParams()
+  const router = useRouter()
+  const { id } = router.query
   const workshopDetails = workshops.find(w => w.id === +id)
+  console.log(workshopDetails)
   return (
     <div className="workshop-details">
       <ScrollToTop />

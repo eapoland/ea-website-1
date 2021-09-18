@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Collapse, CardBody, Card } from 'reactstrap'
-import './styles.scss'
+//import './styles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 

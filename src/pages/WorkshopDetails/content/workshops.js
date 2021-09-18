@@ -1,7 +1,7 @@
-import michal from '../../../assets/images/panelists/mtrzesimiech.png'
-import maja from '../../../assets/images/panelists/mjaryczewska.png'
-import marcin from '../../../assets/images/panelists/mtischner.png'
-import maria from '../../../assets/images/panelists/mtruong.png'
+import michal from '../../../../public/images/panelists/mtrzesimiech.png'
+import maja from '../../../../public/images/panelists/mjaryczewska.png'
+import marcin from '../../../../public/images/panelists/mtischner.png'
+import maria from '../../../../public/images/panelists/mtruong.png'
 
 const hosts = {
   mtrzesimiech: {
