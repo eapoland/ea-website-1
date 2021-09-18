@@ -4,15 +4,28 @@ import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
 import ScrollToTop from '../../../components/ScrollToTop'
 import SectionTitle from '../../../components/SectionTitle'
-import workshops from '../../../content/workshops'
+import workshops, { getAllWorkshopIds } from '../../../content/workshops'
 //import './WorkshopDetails.scss'
 import WorkshopForm from '../../../src/pages/WorkshopDetails/WorkshopForm'
 
-const WorkshopDetails = () => {
-  const router = useRouter()
-  const { id } = router.query
-  const workshopDetails = workshops.find(w => w.id === +id)
-  console.log(workshopDetails)
+export async function getStaticPaths() {
+  const paths = getAllWorkshopIds()
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const workshopDetails = workshops.find(w => w.id === parseInt(params.id))
+  return {
+    props: {
+      workshopDetails,
+    },
+  }
+}
+
+const WorkshopDetails = ({ workshopDetails }) => {
   return (
     <div className="workshop-details">
       <ScrollToTop />

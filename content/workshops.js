@@ -114,3 +114,13 @@ const workshops = [
 ]
 
 export default workshops
+
+export function getAllWorkshopIds() {
+  return workshops.map(workshop => {
+    return {
+      params: {
+        id: workshop.id.toString(),
+      },
+    }
+  })
+}
