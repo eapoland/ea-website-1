@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -65,8 +64,8 @@ const Navbar = () => {
       <div className="flex items-center flex-shrink-0 text-white mr-6 ml-4">
         <Link href="/">
           <a className="relative w-52 h-16 md:w-40 md:h-12">
-            <Image
-              src={isTransparent ? eaLogoWhite : eaLogo}
+            <img
+              src={isTransparent ? eaLogoWhite.src : eaLogo.src}
               alt="Logo Efektywnego Altruizmu"
               layout="fill"
               objectFit="cover"

@@ -2,7 +2,6 @@ import React from 'react'
 import './styles.module.scss'
 import { Col, Row } from 'reactstrap'
 import { Fade } from 'react-reveal'
-import Image from 'next/image'
 import okLogo from '../../public/images/ok-logo.png'
 import paretoLogo from '../../public/images/pareto-logo.png'
 import altruistoLogo from '../../public/images/altruisto-logo.png'
@@ -21,7 +20,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={okLogo} alt="OK logo" />
+              <img src={okLogo.src} alt="OK logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -30,7 +29,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={schweitzerLogo} alt="Albert Schweitzer logo" />
+              <img src={schweitzerLogo.src} alt="Albert Schweitzer logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -39,7 +38,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={provegLogo} alt="ProVeg logo" />
+              <img src={provegLogo.src} alt="ProVeg logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -48,7 +47,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={altruistoLogo} alt="Altruisto logo" />
+              <img src={altruistoLogo.src} alt="Altruisto logo" />
             </a>
           </div>
           <div className="friendly-section__logo">
@@ -57,7 +56,7 @@ const FriendlyOrganisationsSection = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={paretoLogo} alt="Pareto logo" />
+              <img src={paretoLogo.src} alt="Pareto logo" />
             </a>
           </div>
         </div>
