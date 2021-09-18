@@ -2,11 +2,11 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
-import ScrollToTop from '../../components/ScrollToTop'
-import SectionTitle from '../../components/SectionTitle/SectionTitle'
-import workshops from './content/workshops'
+import ScrollToTop from '../../../components/ScrollToTop'
+import SectionTitle from '../../../components/SectionTitle'
+import workshops from '../../../content/workshops'
 //import './WorkshopDetails.scss'
-import WorkshopForm from './WorkshopForm'
+import WorkshopForm from '../../../src/pages/WorkshopDetails/WorkshopForm'
 
 const WorkshopDetails = () => {
   const router = useRouter()

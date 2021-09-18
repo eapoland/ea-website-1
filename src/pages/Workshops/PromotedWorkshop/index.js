@@ -4,7 +4,7 @@ import { Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import EAButton from '../../../../components/Common/EAButton/EAButton'
-import workshops from '../../WorkshopDetails/content/workshops'
+import workshops from '../../../../content/workshops'
 import GAService from '../../../services/GAService'
 
 const PromotedWorkshop = () =>

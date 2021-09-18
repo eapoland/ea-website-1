@@ -1,9 +1,13 @@
 import Slide from 'react-reveal/Slide'
-import ContentPreviewSection from '../components/ContentPreviewSection'
-import FriendlyOrganisationsSection from '../components/FriendlyOrganisationsSection'
+import Fade from 'react-reveal/Fade'
 import EAButton from '../components/Common/EAButton/EAButton'
 import content from '../content/homepage'
 import ScrollToTop from '../components/ScrollToTop'
+import okLogo from '../public/images/ok-logo.png'
+import paretoLogo from '../public/images/pareto-logo.png'
+import altruistoLogo from '../public/images/altruisto-logo.png'
+import provegLogo from '../public/images/proveg-logo.png'
+import schweitzerLogo from '../public/images/schweitzer-logo.png'
 
 const Home = () => (
   <>
@@ -42,9 +46,82 @@ const Home = () => (
         </div>
       </Slide>
     </section>
-    <ContentPreviewSection content={content[0]} />
-    <ContentPreviewSection reversed content={content[1]} />
-    <FriendlyOrganisationsSection />
+    <Fade bottom cascade>
+      <section className="flex flex-col lg:flex-row-reverse justify-center">
+        <div className="w-full lg:w-6/12 flex flex-col justify-center">
+          <img src={content[0].img.src} alt={content[0].imgAlt} />
+        </div>
+        <div className="w-full lg:w-6/12 flex flex-col justify-center py-8 px-4 lg:py-4 lg:px-8 xl:py-12 xl:px-16">
+          <h3 className="text-left">{content[0].heading}</h3>
+          <p>{content[0].text}</p>
+          <EAButton title={content[0].cta} target={content[0].page} size={15} />
+        </div>
+      </section>
+    </Fade>
+    <Fade bottom cascade>
+      <section className="flex flex-col lg:flex-row justify-center">
+        <div className="w-full lg:w-6/12 flex flex-col justify-center">
+          <img src={content[1].img.src} alt={content[1].imgAlt} />
+        </div>
+        <div className="w-full lg:w-6/12 flex flex-col justify-center py-8 px-4 lg:py-4 lg:px-8 xl:py-12 xl:px-16">
+          <h3 className="text-left">{content[1].heading}</h3>
+          <p>{content[1].text}</p>
+          <EAButton title={content[1].cta} target={content[1].page} size={15} />
+        </div>
+      </section>
+    </Fade>
+    <Fade bottom>
+      <section className="flex flex-col bg-secondary py-28 px-20">
+        <h3 className="mt-2 mb-6">Przyjaciele</h3>
+        <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
+          <div className="mx-5 mb-8 lg:mb-0">
+            <a
+              href="https://www.otwarteklatki.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={okLogo.src} alt="OK logo" />
+            </a>
+          </div>
+          <div className="mx-5 mb-8 lg:mb-0">
+            <a
+              href="https://www.schweitzer.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={schweitzerLogo.src} alt="Albert Schweitzer logo" />
+            </a>
+          </div>
+          <div className="mx-5 mb-8 lg:mb-0">
+            <a
+              href="https://proveg.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={provegLogo.src} alt="ProVeg logo" />
+            </a>
+          </div>
+          <div className="mx-5 mb-8 lg:mb-0">
+            <a
+              href="https://altruisto.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={altruistoLogo.src} alt="Altruisto logo" />
+            </a>
+          </div>
+          <div className="mx-5 mb-8 lg:mb-0">
+            <a
+              href="https://optimumpareto.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={paretoLogo.src} alt="Pareto logo" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </Fade>
   </>
 )
 
