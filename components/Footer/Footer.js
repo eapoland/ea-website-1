@@ -7,7 +7,7 @@ import FooterLink from './FooterLink'
 const Footer = () => (
   <div className="flex flex-col md:flex-row py-16 px-0 xl:h-76 justify-center items-center bg-primary text-white">
     <div className="mx-4 md:ml-14 md:w-6/12">
-      <div className="flex items-center justify-center md:justify-start mb-12">
+      <div className="flex items-center justify-center md:justify-start mb-12 xl:mb-6">
         <Link href="/">
           <a className="relative w-72 h-16 md:w-60">
             <img
