@@ -28,6 +28,8 @@ module.exports = {
         p: ['1em', '1.5rem'],
       },
       height: {
+        76: '19rem',
+        120: '30rem',
         145: '36.25rem',
       },
       padding: {

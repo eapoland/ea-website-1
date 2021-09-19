@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import CookieConsent from 'react-cookie-consent'
 import Navbar from '../components/Navbar/Navbar'
-import '../styles/styles.scss'
+//import '../styles/styles.scss'
 import '../styles/globals.scss'
+import Footer from '../components/Footer/Footer'
+import NewsletterCtaSection from '../components/NewsletterCtaSection/NewsletterCtaSection'
 
 function EAWebsite({ Component, pageProps }) {
   return (
@@ -13,6 +15,10 @@ function EAWebsite({ Component, pageProps }) {
       <div className="container m-auto">
         <Navbar />
         <Component {...pageProps} />
+        <footer className="flex flex-col xl:flex-row-reverse">
+          <NewsletterCtaSection />
+          <Footer />
+        </footer>
         <CookieConsent
           location="bottom"
           buttonText="Akceptuję"

@@ -1,11 +1,8 @@
-import React from 'react'
-import { useRouter } from 'next/router'
 import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
 import ScrollToTop from '../../../components/ScrollToTop'
 import SectionTitle from '../../../components/SectionTitle'
 import workshops, { getAllWorkshopIds } from '../../../content/workshops'
-//import './WorkshopDetails.scss'
 import WorkshopForm from '../../../src/pages/WorkshopDetails/WorkshopForm'
 
 export async function getStaticPaths() {
