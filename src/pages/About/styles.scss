@@ -1,16 +1,47 @@
-.about {
-  &__intro.row {
-    margin: 0px;
-    background: #edcf00 0% 0% no-repeat padding-box;
-    .col-sm-6:first-of-type {
-      padding: 10em 4.4em 10em 5em;
-      width: 50%;
-    }
-    .col-sm-6:last-of-type {
-      background: url('../../assets/images/aboutIntro.png') center no-repeat;
-      background-size: cover;
-    }
+.rc-tabs-tabpane {
+  padding: 0 5rem;
+}
+.rc-tabs {
+  border: none !important;
+}
+.rc-tabs-nav-list {
+  border: none !important;
+  display: flex;
+  justify-content: space-between;
+}
+.rc-tabs-nav-operations,
+.rc-tabs-ink-bar {
+  display: none;
+}
+.rc-tabs-tab {
+  background: $color-secondary 0% 0% no-repeat padding-box;
+  margin-bottom: 0.625rem;
+}
+.rc-tabs-tab .rc-tabs-tab-btn {
+  font-weight: normal;
+  width: 17.75rem;
+  height: 6.25rem;
+  background: $color-secondary 0% 0% no-repeat padding-box;
+  color: $color-dark;
+  text-align: center;
+  font: normal normal normal 1.5em/2.125rem Roboto Slab;
+  letter-spacing: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rc-tabs-tab.rc-tabs-tab-active {
+  background: $color-additional 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 60px #0000001a;
+  .rc-tabs-tab-btn {
+    background: $color-additional 0% 0% no-repeat padding-box;
   }
+}
+.rc-tabs-content-holder {
+  padding-top: 2.5rem;
+}
+
+.about {
   h3 {
     text-align: left;
   }
@@ -122,16 +153,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .about__intro.row {
-    flex-direction: column-reverse;
-    .col-sm-6:first-of-type {
-      width: 100%;
-    }
-
-    .col-sm-6:last-of-type {
-      height: 30rem;
-    }
-  }
   .about__work.row {
     flex-direction: column;
     .col-sm-6:last-of-type {

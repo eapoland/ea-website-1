@@ -8,15 +8,18 @@ import consultants from '../../src/pages/About/content/consultants'
 import MemberCard from '../../src/pages/About/MemberCard'
 import ConsultantCard from '../../src/pages/About/ConsultantCard'
 import WorkedWithUsSlider from '../../src/pages/About/WorkedWithUsSlider'
-import FieldsTabs from '../../src/pages/About/FieldsTabs'
+import fields from '../../content/fields'
+import Tabs from '../../components/Tabs'
+import Tab from '../../components/Tabs/Tab'
 
 const About = () => (
-  <div className="about">
+  <>
     <ScrollToTop />
     <SectionTitle text="O nas" title="Czym jest Efektywny Altruizm?" />
-    <Row className="about__intro">
-      <Col sm={6}>
-        <h3>
+    <section className="bg-accent flex flex-col md:flex-row-reverse">
+      <div className="bg-about-intro bg-cover bg-center h-120 md:h-auto w-full md:w-1/2"></div>
+      <div className="flex flex-col justify-center w-full py-20 px-10 lg:py-40 lg:px-20 md:w-1/2">
+        <h3 className="text-left">
           ,,Jak przynieść światu
           <br />
           najwięcej dobra?”
@@ -29,9 +32,9 @@ const About = () => (
           to najlepszy sposób, by identyfikować zaniedbane obszary
           dobroczynności i priorytetyzować działania w ich obrębie.
         </p>
-      </Col>
-      <Col sm={6} />
-    </Row>
+      </div>
+    </section>
+    <section></section>
     <Row className="about__fields">
       <Col>
         <div className="about__fields--intro">
@@ -53,7 +56,11 @@ const About = () => (
             </ul>
           </p>
         </div>
-        <FieldsTabs />
+        <Tabs defaultActiveKey="1" tabPosition="top">
+          {fields.map(field => (
+            <Tab field={field} key={field.key} />
+          ))}
+        </Tabs>
       </Col>
     </Row>
     <Row className="about__work">
@@ -112,7 +119,7 @@ const About = () => (
         <WorkedWithUsSlider />
       </Col>
     </Row> */}
-  </div>
+  </>
 )
 
 export default About

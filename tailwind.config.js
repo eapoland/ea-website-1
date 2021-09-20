@@ -38,6 +38,7 @@ module.exports = {
       },
       backgroundImage: {
         quote: "url('/images/quote.png')",
+        'about-intro': "url('/images/aboutIntro.png')",
       },
     },
   },
