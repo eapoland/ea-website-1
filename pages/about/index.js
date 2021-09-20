@@ -34,39 +34,36 @@ const About = () => (
         </p>
       </div>
     </section>
-    <section></section>
-    <Row className="about__fields">
-      <Col>
-        <div className="about__fields--intro">
-          <h3 className="text-center">Obszary działania</h3>
-          <p>
-            Wybierając obszary, które traktujemy priorytetowo kierujemy się
-            kilkoma wskaźnikami:
-            <ul>
-              <li>
-                <b>skala</b> – czy dany problem jest rozległy?
-              </li>
-              <li>
-                <b>zaniedbania</b> – czy dany problem jest zaniedbany?
-              </li>
-              <li>
-                <b>wykonalności</b> – czy i jakim kosztem jesteśmy w stanie coś
-                z tym zrobić?
-              </li>
-            </ul>
-          </p>
-        </div>
-        <Tabs defaultActiveKey="1" tabPosition="top">
-          {fields.map(field => (
-            <Tab field={field} key={field.key} />
-          ))}
-        </Tabs>
-      </Col>
-    </Row>
-    <Row className="about__work">
-      <Col sm={6} />
-      <Col sm={6}>
-        <h3>Jak działamy w Polsce?</h3>
+    <section className="py-20">
+      <div className="about__fields--intro">
+        <h3 className="text-center mb-14">Obszary działania</h3>
+        <p className="px-8 md:px-20">
+          Wybierając obszary, które traktujemy priorytetowo kierujemy się
+          kilkoma wskaźnikami:
+          <ul>
+            <li>
+              <b>skala</b> – czy dany problem jest rozległy?
+            </li>
+            <li>
+              <b>zaniedbania</b> – czy dany problem jest zaniedbany?
+            </li>
+            <li>
+              <b>wykonalności</b> – czy i jakim kosztem jesteśmy w stanie coś z
+              tym zrobić?
+            </li>
+          </ul>
+        </p>
+      </div>
+      <Tabs defaultActiveKey="1" tabPosition="top">
+        {fields.map(field => (
+          <Tab field={field} key={field.key} />
+        ))}
+      </Tabs>
+    </section>
+    <section className="bg-accent flex flex-col md:flex-row">
+      <div className="bg-about-work bg-cover bg-center h-120 md:h-auto w-full md:w-1/2"></div>
+      <div className="flex flex-col justify-center w-full py-20 px-10 lg:py-40 lg:px-20 md:w-1/2">
+        <h3 className="text-left">Jak działamy w Polsce?</h3>
         <p>
           Naszym celem jest budowanie w Polsce świadomości istotnych, lecz
           zaniedbanych obszarów działalności dobroczynnej, a przy tym kultury
@@ -91,8 +88,9 @@ const About = () => (
           zakresie priorytetów dobroczynnych dla Polski i Europy
           Środkowo-Wschodniej.
         </p>
-      </Col>
-    </Row>
+      </div>
+    </section>
+
     <Row className="about__team">
       <Col>
         <h3 className="text-center">Nasz zespół</h3>
